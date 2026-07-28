@@ -66,4 +66,8 @@ bash push.sh
 - 分片写入微信 Storage（单 key 上限 1MB，故题库 / 单词已切为多个 <1MB 文件）；
 - 首次 / 缓存未命中 + 离线 → 模块内显示「离线模式」提示与「重试」按钮。
 
-**微信公众平台必须配置 request 合法域名**：`raw.githubusercontent.com`（开发设置 → 服务器域名 → request 合法域名）。
+**双源容错**：主源 `raw.githubusercontent.com`，失败自动回退 `cdn.jsdelivr.net/gh/liumingmusic/xueban-data@main` 镜像（国内访问更稳）。两域名都需配进白名单。
+
+**微信公众平台必须配置 request 合法域名**（开发设置 → 服务器域名 → request 合法域名）：
+- `raw.githubusercontent.com`（主源）
+- `cdn.jsdelivr.net`（回退镜像）
