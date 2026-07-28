@@ -1,0 +1,47 @@
+{
+  "repo": "liumingmusic/xueban-data",
+  "branch": "main",
+  "updatedAt": "2026-07-28",
+  "note": "quiz/word 为运行时远程拉取(remote:true)；poems/idioms/quotes 本地打包但源码在此维护(remote:false)。修改任意文件后 bump 对应模块 version 即可触发小程序更新。",
+  "modules": {
+    "quiz": {
+      "version": 1,
+      "remote": true,
+      "files": [
+        "data/quiz_0.json",
+        "data/quiz_1.json",
+        "data/quiz_2.json",
+        "data/quiz_3.json"
+      ],
+      "count": 5690
+    },
+    "word": {
+      "version": 1,
+      "remote": true,
+      "files": [
+        "data/word_0.json",
+        "data/word_1.json",
+        "data/word_2.json"
+      ],
+      "count": 4009
+    },
+    "poems": {
+      "version": 1,
+      "remote": false,
+      "file": "data/poems.json",
+      "count": 169
+    },
+    "idioms": {
+      "version": 1,
+      "remote": false,
+      "file": "data/idioms.json",
+      "count": 348
+    },
+    "quotes": {
+      "version": 1,
+      "remote": false,
+      "file": "data/quotes.json",
+      "count": 70
+    }
+  }
+}
