@@ -1,7 +1,7 @@
 {
   "repo": "liumingmusic/xueban-data",
   "branch": "main",
-  "updatedAt": "2026-08-02",
+  "updatedAt": "2026-08-14",
   "note": "quiz/word 为运行时远程拉取(remote:true)；poems/idioms/quotes 本地打包但源码在此维护(remote:false)。修改任意文件后 bump 对应模块 version 即可触发小程序更新。",
   "modules": {
     "quiz": {
@@ -16,7 +16,7 @@
       "count": 5690
     },
     "word": {
-      "version": 2,
+      "version": 3,
       "remote": true,
       "files": [
         "data/word_0.json",
